@@ -1,0 +1,8 @@
+filename = "TopCompetitors-2012-09-17T02-00-28"
+description = ""
+datestamp = "1347836430"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.15"
+sites[0][name] = "TopCompetitors"
+sites[0][url] = "http://tc_drupal/"
