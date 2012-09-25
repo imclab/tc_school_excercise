@@ -11,11 +11,11 @@ regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
 
-stylesheets[all][] = bootstrap/css/bootstrap.min.css
-;stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
+stylesheets[all][] = bootstrap/css/bootstrap.css
+stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
 stylesheets[all][] = css/twitter_bootstrap.css
 
-scripts[] = bootstrap/js/bootstrap.min.js
+scripts[] = bootstrap/js/bootstrap.js
 
 settings[toggle_name] = 0
 settings[toggle_search] = 1
@@ -23,7 +23,7 @@ settings[toggle_search] = 1
 ;Exclude
 ;javascript
 ;exclude[js][] = 'modules/contextual/contextual.js'
-exclude[js][] = 'misc/jquery.js'
+;exclude[js][] = 'misc/jquery.js'
 
 ;css
 ;exclude[css][] = 'misc/vertical-tabs.css'
@@ -57,9 +57,9 @@ exclude[css][] = 'modules/tracker/tracker.css'
 exclude[css][] = 'modules/update/update.css'
 exclude[css][] = 'modules/user/user.css'
 
-; Information added by drupal.org packaging script on 2012-06-10
+; Information added by drupal.org packaging script on 2012-09-24
 version = "7.x-2.x-dev"
 core = "7.x"
 project = "twitter_bootstrap"
-datestamp = "1339332196"
+datestamp = "1348448881"
 
