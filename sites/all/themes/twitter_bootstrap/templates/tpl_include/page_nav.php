@@ -7,13 +7,15 @@
   		<span class="icon-bar"></span>
   		<span class="icon-bar"></span>
   	  </a>
-  	  
+  	  <!-- 
   	  <?php if ($logo): ?>
     		<a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
     		  <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
     		</a>
   	  <?php endif; ?>
-
+			-->
+			
+			<!-- 
   	  <?php if ($site_name || $site_slogan): ?>
     		<hgroup id="site-name-slogan">
     		  <?php if ($site_name): ?>
@@ -23,17 +25,20 @@
     		  <?php endif; ?>
     		</hgroup>
   	  <?php endif; ?>
-  	  
+  	  -->
+
   	  <div class="nav-collapse">
     	  <nav role="navigation">
       		<?php if ($primary_nav): ?>
       		  <?php print $primary_nav; ?>
       		<?php endif; ?>
-      	  
+
+      	  <!-- 
       		<?php if ($search): ?>
       		  <?php if ($search): print render($search); endif; ?>
       		<?php endif; ?>
-      		
+      		-->
+
       		<?php if ($secondary_nav): ?>
       		  <?php print $secondary_nav; ?>
       		<?php endif; ?>
