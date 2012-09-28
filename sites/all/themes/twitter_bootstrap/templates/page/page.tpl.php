@@ -1,4 +1,7 @@
-<?php include 'tpl_include/page_nav.php';?>
+<?php	
+	include path_to_theme().'/templates/_include/header_nav.php';
+?>
+
 
 <div class="container">
 
