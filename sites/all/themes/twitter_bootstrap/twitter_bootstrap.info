@@ -13,8 +13,8 @@ regions[footer]         = 'Footer'
 
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
 ;stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
-stylesheets[all][] = css/twitter_bootstrap.css
-stylesheets[all][] = css/override.css
+;stylesheets[all][] = css/twitter_bootstrap.css
+stylesheets[all][] = css/override.min.css
 
 scripts[] = bootstrap/js/bootstrap.min.js
 
