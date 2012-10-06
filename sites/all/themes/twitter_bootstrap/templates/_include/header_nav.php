@@ -1,49 +1,20 @@
-<header id="navbar" role="banner" class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-  	<div class="container">
-  	  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-  	  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-  		<span class="icon-bar"></span>
-  		<span class="icon-bar"></span>
-  		<span class="icon-bar"></span>
-  	  </a>
-  	  <!-- 
-  	  <?php if ($logo): ?>
-    		<a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-    		  <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    		</a>
-  	  <?php endif; ?>
-			-->
-			
-			<!-- 
-  	  <?php if ($site_name || $site_slogan): ?>
-    		<hgroup id="site-name-slogan">
-    		  <?php if ($site_name): ?>
-    			<h1>
-    			  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="brand"><?php print $site_name; ?></a>
-    			</h1>
-    		  <?php endif; ?>
-    		</hgroup>
-  	  <?php endif; ?>
-  	  -->
+<nav id="global-nav">
+	<div class="container">
+		<ul>
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+			<li><a href="#">Link 3</a></li>
+			<li><a class="download" href="#">Get the App</a></li>
+		</ul>
+	</div>
+</nav>
 
-  	  <div class="nav-collapse">
-    	  <nav role="navigation">
-      		<?php if ($primary_nav): ?>
-      		  <?php print $primary_nav; ?>
-      		<?php endif; ?>
+<section style="background-image: url(&quot;http://cdn.flipboard.com/media/uploads/about-masthead.jpg&quot;); background-size: cover;" class="background-cover" id="about-splash">
 
-      	  <!-- 
-      		<?php if ($search): ?>
-      		  <?php if ($search): print render($search); endif; ?>
-      		<?php endif; ?>
-      		-->
-
-      		<?php if ($secondary_nav): ?>
-      		  <?php print $secondary_nav; ?>
-      		<?php endif; ?>
-    		</nav>
-  	  </div>         
-  	</div>
-  </div>
-</header>
+	<div class="container">
+		<div class="centerbox">
+			<h1>About us</h1>
+			<h2>Our mission is to let people discover and share content in beautiful, simple, and meaningful ways.</h2>
+		</div>
+	</div>
+</section>

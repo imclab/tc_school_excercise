@@ -17,7 +17,7 @@ regions[footer]         = 'Footer'
 ;stylesheets[all][] = css/override.min.css
 
 stylesheets[all][] = bootstrap/css/bootstrap.css
-stylesheets[all][] = css/override.css
+;stylesheets[all][] = css/override.css
 
 scripts[] = bootstrap/js/bootstrap.min.js
 
