@@ -1,5 +1,6 @@
 <?php	
 	include path_to_theme().'/templates/_include/header_nav.php';
+	//include path_to_theme().'/templates/_include/header_nav_original.php';
 ?>
 
 

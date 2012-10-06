@@ -1,11 +1,14 @@
 <nav id="global-nav">
 	<div class="container">
-		<ul>
+		<?php if ($primary_nav): ?>
+		  <?php print $primary_nav; ?>
+		<?php endif; ?>
+		<!-- <ul>
 			<li><a href="#">Link 1</a></li>
 			<li><a href="#">Link 2</a></li>
 			<li><a href="#">Link 3</a></li>
 			<li><a class="download" href="#">Get the App</a></li>
-		</ul>
+		</ul> -->
 	</div>
 </nav>
 
