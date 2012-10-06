@@ -7,4 +7,4 @@ lessc bootstrap/less/bootstrap.less > bootstrap/css/bootstrap.css
 lessc bootstrap/less/responsive.less > bootstrap/css/bootstrap-responsive.css
 
 # Clear all cache
-/Users/quang.pham/Dev/lib/drush/drush cc all
+drush cc all
