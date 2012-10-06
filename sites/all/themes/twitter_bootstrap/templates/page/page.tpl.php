@@ -1,8 +1,31 @@
 <?php	
-	include path_to_theme().'/templates/_include/header_nav.php';
+	//include path_to_theme().'/templates/_include/header_nav.php';
 	//include path_to_theme().'/templates/_include/header_nav_original.php';
 ?>
 
+<nav id="global-nav">
+	<div class="container">
+		<?php if ($primary_nav): ?>
+		  <?php print $primary_nav; ?>
+		<?php endif; ?>
+	</div>
+</nav>
+
+<?php if (drupal_is_front_page()): ?>
+	<section style="background-image: url(&quot;http://cdn.flipboard.com/media/uploads/about-masthead.jpg&quot;); background-size: cover;" class="background-cover" id="top-splash">
+		<div class="container">
+			<div class="centerbox">
+				<h1>About us</h1>
+				<h2>Our mission is to help our customers keep track on their competitors and customers</h2>
+			</div>
+		</div>
+	</section>
+<?php else: ?>
+<section style="" class="background-cover" id="top-splash">
+	<div class="container">
+	</div>
+</section>
+<?php endif; ?>
 
 <div class="container">
 
