@@ -1,7 +1,16 @@
 <?php	
 	//include path_to_theme().'/templates/_include/header_nav.php';
 	//include path_to_theme().'/templates/_include/header_nav_original.php';
+	
+	//print render (file_create_url($node->field_splash_page_picture['und'][0]['uri'])); 
+	// print count($node->field_splash_page_picture);
+	// print count($node->field_splash_page_text);
+	// print '<pre>';
+	// //print_r($node->field_splash_page_picture['und']);
+	// print_r($node);
+	// print '</pre>';
 ?>
+
 
 <nav id="global-nav">
 	<div class="container">
@@ -14,12 +23,12 @@
 </nav>
 
 
-<?php if (drupal_is_front_page()): ?>
-	<section style="background-image: url(&quot;http://cdn.flipboard.com/media/uploads/about-masthead.jpg&quot;); background-size: cover;" class="background-cover" id="top-splash">
+<?php if (isset($node->field_splash_page_picture)): ?>
+	<section style="background-image: url(&quot;<?php echo render(file_create_url($node->field_splash_page_picture['und'][0]['uri']));?>&quot;); background-size: cover; height:<?php echo $node->field_splash_page_picture['und'][0]['height'];?>px;" class="background-cover" id="top-splash">
 		<div class="container">
 			<div class="centerbox">
-				<h1>About us</h1>
-				<h2>Our mission is to help our customers keep track on their competitors and customers</h2>
+				<!-- <h1>About us</h1> -->
+				<h2><?php echo $node->field_splash_page_text['und'][0]['value'];?></h2>
 			</div>
 		</div>
 	</section>
