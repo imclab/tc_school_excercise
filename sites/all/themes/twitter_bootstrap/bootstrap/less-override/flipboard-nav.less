@@ -1,26 +1,42 @@
+#logo {
+	float: left;
+	margin-right: 20px;
+	margin-top: -10px;
+}
 #global-nav {
-	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
-	border: 0 none;
-	font-family: "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686",Helvetica,sans-serif;
-	font-size: 17px;
-	height: 43px;
-	margin: 0 0 -58px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	*zoom: 1;
 	overflow: visible;
-	padding: 15px 0 0;
 	position: relative;
 	z-index: 101;
+	height: 50px;
+	background: white;
+	background: rgba(255, 255, 255, 0.75);
+	padding-top: 15px;
+	font-family: "HelveticaNeueLtCn", "HelveticaNeueW01-47LtCn 692686", Helvetica, sans-serif;
+	font-size: 17px;
+	margin-bottom: -65px;
 }
+
 #global-nav ul{
 	line-height: 29px;
-	margin: 0 auto;
+	margin: 10px auto 0 auto;
+	width: 690px;
 	/*text-align: center;*/
 }
 #global-nav li {
-	display: inline-block;
 	list-style-image: none;
 	list-style-type: none;
 	margin-left: 0;
+	display: -moz-inline-stack;
+	display: inline-block;
 	vertical-align: middle;
+	*vertical-align: auto;
+	zoom: 1;
+	*display: inline;
 	white-space: nowrap;
 }
 #global-nav li {
@@ -31,17 +47,14 @@
 	color: #333333;
 	text-decoration: none;
 }
-#global-nav a.download {
-	background-image: url("/static/img/nav-carrot.png?1346426698");
-	background-position: 100% 50%;
-	background-repeat: no-repeat;
-	color: #9E0000;
-	padding-right: 30px;
-}
 #global-nav a:hover, 
 #global-nav a.active {
 	color: #9E0000;
 }
+
+/*#global-nav:after {
+  clear: both;
+}*/
 
 
 #top-splash {
@@ -59,14 +72,12 @@
 	height: 610px;
 	width: 100%;
 }
-body.not-front #top-splash {
-	height:80px;
-}
+
 #top-splash > .container {
 	position: relative;
 	z-index: 1;
 	height: inherit;
-	padding-top: 42px;
+	/*padding-top: 42px;*/
 }
 #top-splash > .container .centerbox {
 	height: inherit;
@@ -88,4 +99,9 @@ body.not-front #top-splash {
 	font-size: 60px;
 	line-height: 62px;
 	font-weight: normal;
+}
+
+
+body.not-front #top-splash {
+	height:80px;
 }

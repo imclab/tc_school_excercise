@@ -5,11 +5,14 @@
 
 <nav id="global-nav">
 	<div class="container">
+		<a id="logo" href="/"><img src="<?php print '/'.path_to_theme().'/bootstrap/img/logo70x50.png';?>"></a>
+		
 		<?php if ($primary_nav): ?>
 		  <?php print $primary_nav; ?>
 		<?php endif; ?>
 	</div>
 </nav>
+
 
 <?php if (drupal_is_front_page()): ?>
 	<section style="background-image: url(&quot;http://cdn.flipboard.com/media/uploads/about-masthead.jpg&quot;); background-size: cover;" class="background-cover" id="top-splash">
@@ -26,6 +29,8 @@
 	</div>
 </section>
 <?php endif; ?>
+
+
 
 <div class="container">
 
