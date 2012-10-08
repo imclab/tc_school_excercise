@@ -3,7 +3,7 @@
 	margin-right: 20px;
 	margin-top: -10px;
 }
-#global-nav {
+#top-nav {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,13 +21,13 @@
 	margin-bottom: -65px;
 }
 
-#global-nav ul{
+#top-nav ul{
 	line-height: 29px;
 	margin: 10px auto 0 auto;
 	width: 690px;
 	/*text-align: center;*/
 }
-#global-nav li {
+#top-nav li {
 	list-style-image: none;
 	list-style-type: none;
 	margin-left: 0;
@@ -39,22 +39,18 @@
 	*display: inline;
 	white-space: nowrap;
 }
-#global-nav li {
+#top-nav li {
 	margin-left: 15px;
 	margin-right: 15px;
 }
-#global-nav a{
+#top-nav a{
 	color: #333333;
 	text-decoration: none;
 }
-#global-nav a:hover, 
-#global-nav a.active {
+#top-nav a:hover, 
+#top-nav a.active {
 	color: #9E0000;
 }
-
-/*#global-nav:after {
-  clear: both;
-}*/
 
 
 #top-splash {
@@ -66,18 +62,16 @@
 	-moz-transition: right 0.1s ease;
 	-o-transition: right 0.1s ease;
 	transition: right 0.1s ease;
-	background-image: url('/static/img/about-masthead.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 610px;
 	width: 100%;
+	height:0;
 }
 
 #top-splash > .container {
 	position: relative;
 	z-index: 1;
 	height: inherit;
-	/*padding-top: 42px;*/
 }
 #top-splash > .container .centerbox {
 	height: inherit;
@@ -101,6 +95,13 @@
 	font-weight: normal;
 }
 
+.gradient-separator {
+    background: url("../img/gradient2.jpg") no-repeat scroll center top transparent;
+    border: medium none;
+    clear: both;
+    height: 40px;
+    margin: auto;
+}
 
 body.not-front #top-splash {
 	height:80px;

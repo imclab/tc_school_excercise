@@ -722,7 +722,7 @@ a.ribbon {
 /* -------------------------------- */
 /* Global Navigation                */
 /* -------------------------------- */
-#global-nav, #secondary-nav {
+#top-nav, #secondary-nav {
   margin: 0;
   padding: 0;
   border: 0;
@@ -739,7 +739,7 @@ a.ribbon {
   font-size: 17px;
   margin-bottom: -58px;
 }
-#global-nav li, #secondary-nav li {
+#top-nav li, #secondary-nav li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -751,47 +751,47 @@ a.ribbon {
   *display: inline;
   white-space: nowrap;
 }
-.drawer-open #global-nav, .drawer-open #secondary-nav {
+.drawer-open #top-nav, .drawer-open #secondary-nav {
   -webkit-transition: right 0.5s ease;
   -moz-transition: right 0.5s ease;
   -o-transition: right 0.5s ease;
   transition: right 0.5s ease;
   right: 175px;
 }
-#global-nav ul, #secondary-nav ul {
+#top-nav ul, #secondary-nav ul {
   line-height: 29px;
   margin: 0 auto;
   text-align: center;
 }
-#global-nav li, #secondary-nav li {
+#top-nav li, #secondary-nav li {
   margin-left: 15px;
   margin-right: 15px;
 }
-#global-nav li.plus, #secondary-nav li.plus {
+#top-nav li.plus, #secondary-nav li.plus {
   margin-top: 0;
   margin-right: 64px;
 }
-#global-nav li.plus img, #secondary-nav li.plus img {
+#top-nav li.plus img, #secondary-nav li.plus img {
   display: block;
 }
-#global-nav a, #secondary-nav a {
+#top-nav a, #secondary-nav a {
   color: #333333;
   text-decoration: none;
 }
-#global-nav a.download, #secondary-nav a.download {
+#top-nav a.download, #secondary-nav a.download {
   padding-right: 30px;
   background-image: url('/static/img/nav-carrot.png?1346376079');
   background-repeat: no-repeat;
   background-position: 100% 50%;
   color: #9e0000;
 }
-#global-nav a:hover, #secondary-nav a:hover {
+#top-nav a:hover, #secondary-nav a:hover {
   color: #9e0000;
 }
-#global-nav li.about_nav, #secondary-nav li.about_nav {
+#top-nav li.about_nav, #secondary-nav li.about_nav {
   position: relative;
 }
-#global-nav li.about_nav ul, #secondary-nav li.about_nav ul {
+#top-nav li.about_nav ul, #secondary-nav li.about_nav ul {
   background: transparent;
   left: 50%;
   margin-left: -62px;
@@ -812,19 +812,19 @@ a.ribbon {
   -o-transition-delay: 0s, 0.25s;
   transition-delay: 0s, 0.25s;
 }
-#global-nav li.about_nav ul li, #secondary-nav li.about_nav ul li {
+#top-nav li.about_nav ul li, #secondary-nav li.about_nav ul li {
   background-color: #F5F5F5;
   display: block;
   height: 57px;
   margin: 0;
 }
-#global-nav li.about_nav ul li.icons-dropdown_caret, #secondary-nav li.about_nav ul li.icons-dropdown_caret {
+#top-nav li.about_nav ul li.icons-dropdown_caret, #secondary-nav li.about_nav ul li.icons-dropdown_caret {
   background-color: transparent;
   height: 16px;
   position: absolute;
   top: 0;
 }
-#global-nav li.about_nav ul li a, #secondary-nav li.about_nav ul li a {
+#top-nav li.about_nav ul li a, #secondary-nav li.about_nav ul li a {
   border-top: 1px solid #E9E9E9;
   display: block;
   font-size: 17px;
@@ -833,13 +833,13 @@ a.ribbon {
   text-align: center;
   width: 124px;
 }
-#global-nav li.about_nav ul li:first-child a, #secondary-nav li.about_nav ul li:first-child a {
+#top-nav li.about_nav ul li:first-child a, #secondary-nav li.about_nav ul li:first-child a {
   border-top: none;
 }
-#global-nav li.about_nav:hover > a, #secondary-nav li.about_nav:hover > a {
+#top-nav li.about_nav:hover > a, #secondary-nav li.about_nav:hover > a {
   color: #9e0000;
 }
-#global-nav li.about_nav:hover ul, #secondary-nav li.about_nav:hover ul {
+#top-nav li.about_nav:hover ul, #secondary-nav li.about_nav:hover ul {
   display: block;
   opacity: 1;
   top: 28px;
@@ -856,33 +856,33 @@ a.ribbon {
   -o-transition-delay: 0, 0;
   transition-delay: 0, 0;
 }
-body[data-controller="app-tour"] #global-nav a.app-tour, body[data-controller="app-tour"] #secondary-nav a.app-tour {
+body[data-controller="app-tour"] #top-nav a.app-tour, body[data-controller="app-tour"] #secondary-nav a.app-tour {
   color: #9e0000;
 }
-body[data-controller="publishers"] #global-nav a.publishers, body[data-controller="publishers"] #secondary-nav a.publishers {
+body[data-controller="publishers"] #top-nav a.publishers, body[data-controller="publishers"] #secondary-nav a.publishers {
   color: #9e0000;
 }
-body[data-controller="advertisers"] #global-nav a.advertisers, body[data-controller="advertisers"] #secondary-nav a.advertisers {
+body[data-controller="advertisers"] #top-nav a.advertisers, body[data-controller="advertisers"] #secondary-nav a.advertisers {
   color: #9e0000;
 }
-body[data-controller="support"] #global-nav a.support, body[data-controller="support"] #secondary-nav a.support {
+body[data-controller="support"] #top-nav a.support, body[data-controller="support"] #secondary-nav a.support {
   color: #9e0000;
 }
-body[data-controller="about"] #global-nav a.about, body[data-controller="about"] #secondary-nav a.about {
+body[data-controller="about"] #top-nav a.about, body[data-controller="about"] #secondary-nav a.about {
   color: #9e0000;
 }
-body[data-controller="press"] #global-nav a.about, body[data-controller="press"] #secondary-nav a.about {
+body[data-controller="press"] #top-nav a.about, body[data-controller="press"] #secondary-nav a.about {
   color: #9e0000;
 }
-body[data-controller="careers"] #global-nav a.about, body[data-controller="careers"] #secondary-nav a.about {
+body[data-controller="careers"] #top-nav a.about, body[data-controller="careers"] #secondary-nav a.about {
   color: #9e0000;
 }
 
-#global-nav > ul > li.plus > a, #secondary-nav > ul > li.plus > a {
+#top-nav > ul > li.plus > a, #secondary-nav > ul > li.plus > a {
   line-height: normal;
 }
 
-#global-nav > ul > li > a, #secondary-nav > ul > li > a {
+#top-nav > ul > li > a, #secondary-nav > ul > li > a {
   display: block;
   height: 29px;
   line-height: 34px;
@@ -4327,7 +4327,7 @@ aside.feature-callout .magnify {
     display: block !important;
   }
 
-  nav#global-nav, nav#secondary-nav {
+  nav#top-nav, nav#secondary-nav {
     z-index: 99999;
   }
 
@@ -4335,13 +4335,13 @@ aside.feature-callout .magnify {
     z-index: 99998;
   }
 
-  nav#global-nav, nav#secondary-nav {
+  nav#top-nav, nav#secondary-nav {
     background-color: white;
     margin-bottom: 0;
     min-width: 320px;
     width: 100%;
   }
-  nav#global-nav li, nav#secondary-nav li {
+  nav#top-nav li, nav#secondary-nav li {
     display: inline-block;
     font-size: 10px !important;
     height: auto !important;
@@ -4349,45 +4349,45 @@ aside.feature-callout .magnify {
     margin: 0 8px 0 0;
     padding: 8px 0 0;
   }
-  nav#global-nav li a, nav#secondary-nav li a {
+  nav#top-nav li a, nav#secondary-nav li a {
     height: auto !important;
     line-height: normal !important;
   }
-  nav#global-nav li.plus, nav#secondary-nav li.plus {
+  nav#top-nav li.plus, nav#secondary-nav li.plus {
     margin: 0 12px 0 15px;
     padding-top: 5px;
   }
-  nav#global-nav li:first-child, nav#secondary-nav li:first-child {
+  nav#top-nav li:first-child, nav#secondary-nav li:first-child {
     margin-left: 0;
   }
-  nav#global-nav li:last-child, nav#secondary-nav li:last-child {
+  nav#top-nav li:last-child, nav#secondary-nav li:last-child {
     margin-right: 0;
   }
-  nav#global-nav li.about_nav:hover ul, nav#secondary-nav li.about_nav:hover ul {
+  nav#top-nav li.about_nav:hover ul, nav#secondary-nav li.about_nav:hover ul {
     padding-top: 0px;
     top: 39px;
   }
-  nav#global-nav li.about_nav li, nav#secondary-nav li.about_nav li {
+  nav#top-nav li.about_nav li, nav#secondary-nav li.about_nav li {
     padding-top: 0px;
   }
-  nav#global-nav li.about_nav li a, nav#secondary-nav li.about_nav li a {
+  nav#top-nav li.about_nav li a, nav#secondary-nav li.about_nav li a {
     display: block;
     font-size: 12px;
     height: 24px !important;
     line-height: 26px !important;
   }
-  nav#global-nav li.about_nav li.icons-dropdown_caret, nav#secondary-nav li.about_nav li.icons-dropdown_caret {
+  nav#top-nav li.about_nav li.icons-dropdown_caret, nav#secondary-nav li.about_nav li.icons-dropdown_caret {
     height: 16px !important;
     top: -16px;
   }
-  nav#global-nav a.download, nav#secondary-nav a.download {
+  nav#top-nav a.download, nav#secondary-nav a.download {
     background: none;
     padding-right: 0;
   }
-  nav#global-nav a:hover, nav#secondary-nav a:hover {
+  nav#top-nav a:hover, nav#secondary-nav a:hover {
     color: #333333;
   }
-  nav#global-nav img, nav#secondary-nav img {
+  nav#top-nav img, nav#secondary-nav img {
     height: 15px;
     width: 15px;
   }
