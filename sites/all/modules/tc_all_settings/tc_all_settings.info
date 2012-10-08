@@ -21,6 +21,7 @@ features[field][] = node-company-field_descriptions
 features[field][] = node-company-field_industry
 features[field][] = node-company-field_website
 features[field][] = node-page-body
+features[field][] = node-page-field_splash_page_heading
 features[field][] = node-page-field_splash_page_picture
 features[field][] = node-page-field_splash_page_text
 features[node][] = company

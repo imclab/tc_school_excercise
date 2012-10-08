@@ -643,7 +643,75 @@ function tc_all_settings_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '-4',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-page-field_splash_page_heading'.
+  $fields['node-page-field_splash_page_heading'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_splash_page_heading',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'page',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_splash_page_heading',
+      'label' => 'Splash Page Heading',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '3',
       ),
     ),
   );
@@ -703,7 +771,7 @@ function tc_all_settings_field_default_fields() {
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
-        'file_directory' => '',
+        'file_directory' => 'page/splash_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
@@ -719,7 +787,7 @@ function tc_all_settings_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '31',
+        'weight' => '5',
       ),
     ),
   );
@@ -728,7 +796,7 @@ function tc_all_settings_field_default_fields() {
   $fields['node-page-field_splash_page_text'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_splash_page_text',
@@ -787,7 +855,7 @@ function tc_all_settings_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '32',
+        'weight' => '4',
       ),
     ),
   );
@@ -801,6 +869,7 @@ function tc_all_settings_field_default_fields() {
   t('Competitors');
   t('Customers');
   t('Industry');
+  t('Splash Page Heading');
   t('Splash Page Picture');
   t('Splash Page Text');
   t('Website');
