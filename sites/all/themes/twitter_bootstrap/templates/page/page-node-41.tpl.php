@@ -96,28 +96,7 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-
-			<?php 
-				if ($node->nid !=41) 
-					print render($page['content']);
-				else 
-					include path_to_theme().'/templates/_include/feed-page.php';
-			
-			?>
-      <?php //print render($page['content']); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <?php print render($page['content']); ?>
 	  </section>
 
     <?php if ($page['sidebar_second']): ?>
