@@ -98,13 +98,14 @@
       <?php endif; ?>
 
 			<?php 
-				if ($node->nid !=41) 
-					print render($page['content']);
-				else 
-					include path_to_theme().'/templates/_include/feed-page.php';
+				// QUANG custom feed page
+				// if ($node->nid !=41) 
+				// 	print render($page['content']);
+				// else 
+				// 	include path_to_theme().'/templates/_include/feed-page.php';
 			
 			?>
-      <?php //print render($page['content']); ?>
+      <?php print render($page['content']); ?>
 
 
 
