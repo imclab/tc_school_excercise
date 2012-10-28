@@ -37,8 +37,12 @@ function linkedin_access_token($account) {
   // First or renewal request
   if (!isset($_GET['action']) || $_GET['action'] != $_SESSION['random']) {
     $_SESSION['random'] = $random;
-    $url = $base_url . "/requestToken";
-    $request = OAuthRequest::from_consumer_and_token($consumer, NULL, 'POST', $url);
+    
+		// QUANG modify permissions
+		//$url = $base_url . "/requestToken";
+		$url = $base_url . "/requestToken?scope=r_fullprofile";
+    
+		$request = OAuthRequest::from_consumer_and_token($consumer, NULL, 'POST', $url);
     $request->set_parameter("oauth_callback", $callback);
     $request->sign_request($signature, $consumer, NULL);
     $header = $request->to_header();
