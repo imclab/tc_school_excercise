@@ -37,12 +37,9 @@ function linkedin_access_token($account) {
   // First or renewal request
   if (!isset($_GET['action']) || $_GET['action'] != $_SESSION['random']) {
     $_SESSION['random'] = $random;
-    
-		// QUANG modify permissions
-		//$url = $base_url . "/requestToken";
-		$url = $base_url . "/requestToken?scope=r_fullprofile";
-    
-		$request = OAuthRequest::from_consumer_and_token($consumer, NULL, 'POST', $url);
+    //$url = $base_url . "/requestToken";
+		$url = $base_url . "/requestToken?scope=r_fullprofile+r_network";
+    $request = OAuthRequest::from_consumer_and_token($consumer, NULL, 'POST', $url);
     $request->set_parameter("oauth_callback", $callback);
     $request->sign_request($signature, $consumer, NULL);
     $header = $request->to_header();
@@ -201,7 +198,17 @@ function _linkedin_get_profile_fields($uid, $fields = array()) {
   $tokens = (array) $tokens;
   $append .= _linkedin_build_fields_request($fields, $type);
   $url = $base_url . $append;
+
+	// QUANG
+	//print ($url);
+	//print_r($url);
+	//print_r($tokens);
+	
   $response = linkedin_get_fields($url, $tokens);
+	
+	// QUANG
+	//echo "QUANG";
+	//print_r($resonse);
 
   if (isset($response['error']['status']) && ($response['error']['status'] == 401 || $response['error']['status'] == 403)) {
     // No relationships between users, switch back to public profile and retry
@@ -240,6 +247,22 @@ function _linkedin_get_fields($url, $tokens) {
   //Get sure library is loaded before doing anything.
   linkedin_init();
 
+	// QUANG
+	// print "QUANG";
+	// print "<pre>";
+	// print_r($url);
+	// print "</pre>";
+	
+	$url = "http://api.linkedin.com/v1/companies/79082:(id,name,ticker,description)";
+	//$url = "http://api.linkedin.com/v1/companies/universal-name=linkedin";
+	//$url = "http://api.linkedin.com/v1/company-search?keywords={activeark}";
+	// 
+	// // QUANG
+	// print "QUANG";
+	// print "<pre>";
+	// print_r($url);
+	// print "</pre>";
+
   $signature = new OAuthSignatureMethod_HMAC_SHA1();
   $consumer_key = variable_get('linkedin_consumer_key', '');
   $consumer_secret = variable_get('linkedin_consumer_secret', '');
@@ -247,8 +270,27 @@ function _linkedin_get_fields($url, $tokens) {
   $token = new OAuthConsumer($tokens['token_key'], $tokens['token_secret'], 1);
   $request = OAuthRequest::from_consumer_and_token($consumer, $token, "GET", $url);
   $request->sign_request($signature, $consumer, $token);
+
+	//QUANG
+	// print "QUANG";
+	// print "<pre>";
+	// print_r($request);
+	// print "</pre>";
+	
   $header = $request->to_header("https://api.linkedin.com");
-  $response = _linkedin_http_request($url, $header);
+
+	//QUANG
+	// print "QUANG";
+	// print "<pre>";
+	// print_r($header);
+	// print "</pre>";
+	$response = _linkedin_http_request($url, $header);
+	
+	// QUANG 
+	print "<pre>";
+	print_r($response);
+	print "</pre>";
+	
   parse_str($response);
   $response = _linkedin_parse_fields($response);
   if (isset($response['error-code'])) {
@@ -355,6 +397,12 @@ function _linkedin_http_request($url, $header, $body = NULL) {
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
     }
   }
+
+	// QUANG
+	// print "QUANG";
+	// print "<pre>";
+	// //print_r($ch);
+	// print "</pre>";
 
   $output = curl_exec($ch);
   curl_close($ch);
